@@ -1,140 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <h1>Hello forms!</h1>
-        <form class="form">
-            <p> 
-                <label>Your name:
-                <input class="form__item" name="firstName" id="firstName">
+      <h1>Hello forms!</h1>
+      <form class="form">
+        <p>
+          <label
+            >Your name:
+            <input class="form__item" name="firstName" id="firstName" />
+          </label>
+        </p>
+
+        <p>
+          <label for="lastName">Your last name:</label>
+          <input name="lastName" id="lastName" />
+        </p>
+
+        <p>
+          <label
+            >Your dog's name:
+            <input id="dogName" name="dogName" type="text" value="Bonita" />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Your cat's name:
+            <input
+              id="catName"
+              name="catName"
+              type="text"
+              placeholder="Enter your cat's name"
+              value="Effy"
+            />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Your favourite color:
+            <input
+              id="color"
+              name="color"
+              type="text"
+              placeholder="Enter your favourite color"
+            />
+          </label>
+        </p>
+
+        <fieldset>
+          <legend>Address:</legend>
+          <p>
+            <label
+              >City:
+              <input id="city" name="city" placeholder="Enter your city" />
             </label>
-            </p>
-
-            <p> 
-                <label for="lastName">Your name:</label>
-                <input name="lastName" id="lastName">
-            
-            </p>
-
-            <p>
-                <label>Your dog's name:
-                    <input id="dogName" name="dogName" type="text" value="Bonita">
-                </label>
-            </p>
-
-            <p>
-                <label>Your cat's name:
-                    <input id="catName" name="catName" type="text" placeholder="Enter your cat's name" value="Effy">
-                </label>
-            </p>
-
-            <p>
-                <label>Your favourite color:
-                    <input id="color" name="color" type="text" placeholder="Enter your favourite color">
-                </label>
-            </p>
-
-            
-                <fieldset>
-                    <legend>Address:</legend>
-                    <p>
-                    <label>City:
-                   <input id="city" name="city" placeholder="Enter your city" >
-                </label>
-                <label> Street name:
-                    <input id="steetName" name="streetName" placeholder="Enter your street name">
-                </label>
-            </p>
-
-                </fieldset>
-               
-            
-<br/>
-            
-                <fieldset>
-                    <legend>Your favourite color:</legend>
-                    <p>
-                        <label>
-                            <input type="radio" name="color" checked value="black">Black
-                        </label>
-
-                
-            </p>
-
-            <p>
-                <label>Pink
-                    <input type="radio" name="color" value="pink">
-                </label>
-
-        
-    </p>
-
-    <p>
-        <label>
-            <input type="radio" name="color" value="crazyRed">Red
-        </label>
-
-
-</p>
+            <label>
+              Street name:
+              <input
+                id="steetName"
+                name="streetName"
+                placeholder="Enter your street name"
+              />
+            </label>
+          </p>
         </fieldset>
-            
-<p>
-    <label>
-        <input type="checkbox" name="agreement" checked value="agree">I agree
-    </label>
-</p>
 
-<p>
-    <label>
-        <input type="checkbox" name="agreement">I agree
-    </label>
-</p>
+        <br />
 
-<p>
-    <label>Your phone number:
-        <input id="phoneNumber" name="phoneNumber" type="tel">
-    </label>
-</p>
+        <fieldset>
+          <legend>Your favourite color:</legend>
+          <p>
+            <label>
+              <input type="radio" name="color" checked value="black" />Black
+            </label>
+          </p>
 
-<p>
-<label>Your favourite number:
-    <input id="favouriteNumber" placeholder="Enter your favourite number" name="favouriteNumber" type="number">
-</label>
-</p>
+          <p>
+            <label
+              >Pink
+              <input type="radio" name="color" value="pink" />
+            </label>
+          </p>
 
+          <p>
+            <label>
+              <input type="radio" name="color" value="crazyRed" />Red
+            </label>
+          </p>
+        </fieldset>
 
+        <p>
+          <label>
+            <input type="checkbox" name="agreement" checked value="agree" />I
+            agree
+          </label>
+        </p>
 
-<p>
-    <label>Your email:
-        <input id="email" name="email" placeholder="please enter your email address" type="email">
-    </label>
-</p>
+        <p>
+          <label> <input type="checkbox" name="agreement" />I agree </label>
+        </p>
 
-<p>
-    <label>How much do you like it?
-        <input class="form__item range--js" id="range" name="range" type="range" min="0" max="100" step="25">
-    </label>
-</p>
+        <p>
+          <label
+            >Your phone number:
+            <input id="phoneNumber" name="phoneNumber" type="tel" />
+          </label>
+        </p>
 
-<p>
-    <label>Password:
-        <input name="password" id="password" placeholder="please enter your password" type="password">
-    </label>
-</p>
+        <p>
+          <label
+            >Your favourite number:
+            <input
+              id="favouriteNumber"
+              placeholder="Enter your favourite number"
+              name="favouriteNumber"
+              type="number"
+            />
+          </label>
+        </p>
 
-<p>
-    <label>Photo
-        <input type="file" name="photo" id="photo">
-    </label>
-</p>
+        <p>
+          <label
+            >Your email:
+            <input
+              id="email"
+              name="email"
+              placeholder="please enter your email address"
+              type="email"
+            />
+          </label>
+        </p>
 
-        </form>
+        <p>
+          <label
+            >How much do you like it?
+            <input
+              class="form__item range--js"
+              id="range"
+              name="range"
+              type="range"
+              min="0"
+              max="100"
+              step="25"
+            />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Password:
+            <input
+              name="password"
+              id="password"
+              placeholder="please enter your password"
+              type="password"
+            />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Photo
+            <input type="file" name="photo" id="photo" />
+          </label>
+        </p>
+
+        <p>
+          <label for="animal">Pick one animal</label>
+          <select name="animal" id="animal">
+            <option value="animal-1">Cat</option>
+            <option value="animal-2">Dog</option>
+            <option value="animal-3">Panda</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="story">Your story:</label>
+          <textarea name="story" id="story">Enter your story...</textarea>
+        </p>
+
+        <p>
+          <input name="submit" id="submit" type="submit" value="Submit" />
+        </p>
+      </form>
     </main>
-    
-</body>
+  </body>
 </html>
