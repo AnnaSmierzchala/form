@@ -10,16 +10,16 @@
   </head>
   <body>
     <main class="main main--js">
-      <div class="main__div">
+      
 
       
-      <h1 main__header>Hello forms!</h1>
-      <p class="main__paragraph moment--js">ok</p>
+     <div class="main__div"> <h1 class="main__header">Hello forms!</h1>
+      <button class="button change--js" type="button">Kliknij mnie </button>
     </div>
       <!--    <form action="https://dev.cotenfrontend.pl" method="post" class="form"></form> -->
-<form>
-        <button class="change--js" type="button">Kliknij mnie </button>
-
+<form class="form">
+        
+<div>
         <p class="form__p">
           <label class="form__label"
             >Your name:
@@ -81,7 +81,7 @@
         <fieldset class="form__fieldset">
           <legend class="form__legend">Address:</legend>
           <p class="form__p">
-            <label class="form__label"
+            <label class="form__label form__label--font"
               >City:
               <input
                 class="form__item"
@@ -90,7 +90,7 @@
                 placeholder="Enter your city"
               />
             </label><br/>
-            <label class="form__label">
+            <label class="form__label form__label--font">
               Street name:
               <input
                 class="form__item"
@@ -107,7 +107,7 @@
         <fieldset class="form__fieldset">
           <legend class="form__legend">Your favourite color:</legend>
           <p class="form__p">
-            <label class="form__label">
+            <label class="form__label form__label--font">
               <input
                 class="form__item-new"
                 type="radio"
@@ -118,7 +118,7 @@
           </p>
 
           <p class="form__p">
-            <label class="form__label"
+            <label class="form__label form__label--font"
               > Pink
               <input
                 class="form__item-new"
@@ -130,7 +130,7 @@
           </p>
 
           <p class="form__p">
-            <label class="form__label">
+            <label class="form__label form__label--font">
               <input
                 class="form__item-new"
                 type="radio"
@@ -143,31 +143,15 @@
           </p>
         </fieldset>
 
-        <p class="form__p">
-          <label class="form__label">
-            <input
-              class="form__item-new"
-              type="checkbox"
-              name="agreement"
-              checked
-              value="agree"
-            /> I agree
-          </label>
-        </p>
+        
 
-        <p class="form__p">
-          <label class="form__label">
-            <input
-              class="form__item-new"
-              type="checkbox"
-              name="agreement"> I agree
-          </label>
-        </p>
-
+        
+      </div>
+      <div>
         <p class="form__p">
           <label class="form__label"
             >Your phone number:
-            <input id="phoneNumber" name="phoneNumber" type="tel" />
+            <input class="form__item" id="phoneNumber" name="phoneNumber" type="tel" />
           </label>
         </p>
 
@@ -245,7 +229,7 @@
 
         <p class="form__p">
           <label class="form__label" for="story">Your story:</label>
-          <textarea class="form__item" name="story" id="story">
+          <textarea class="form__item form__item--story" name="story" id="story">
 Enter your story...</textarea
           >
         </p>
@@ -256,18 +240,42 @@ Enter your story...</textarea
           <label class="form__label">
             <input class="form__item" name="name" id="name" value="Anna">
           </label>
+        </p> </div>
+
+        <div class="flex">
+
+        <p class="form__p">
+          <label class="form__label">
+            <input
+              class="form__item-new"
+              type="checkbox"
+              name="agreement"> I agree
+          </label>
         </p>
 
         <p class="form__p">
+          <label class="form__label">
+            <input
+              class="form__item-new"
+              type="checkbox"
+              name="agreement"
+              checked
+              value="agree"
+            /> I disagree
+          </label>
+        </p>
+      </div>
+
+        <div class="flex1"><p class="form__p">
           <input
-            class="form__item"
+            class="form__item--submit"
             name="submit"
             id="submit"
             type="submit"
             value="Submit"
           />
         </p>
-
+      </div>
       </form>
     </main>
     <script src="index.js"></script>
