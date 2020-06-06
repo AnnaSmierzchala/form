@@ -9,9 +9,17 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <main>
-      <h1>Hello forms!</h1>
-      <form action="https://dev.cotenfrontend.pl" method="post" class="form">
+    <main class="main main--js">
+      <div class="main__div">
+
+      
+      <h1 main__header>Hello forms!</h1>
+      <p class="main__paragraph moment--js">ok</p>
+    </div>
+      <!--    <form action="https://dev.cotenfrontend.pl" method="post" class="form"></form> -->
+<form>
+        <button class="change--js" type="button">Kliknij mnie </button>
+
         <p class="form__p">
           <label class="form__label"
             >Your name:
@@ -19,7 +27,7 @@
               class="form__item"
               name="firstName"
               id="firstName"
-              required
+              
             />
           </label>
         </p>
@@ -129,7 +137,8 @@
                 name="color"
                 checked
                 value="crazyRed"
-              /> Red
+              /> 
+              Red
             </label>
           </p>
         </fieldset>
@@ -241,6 +250,14 @@ Enter your story...</textarea
           >
         </p>
 
+        
+
+        <p class="form__p">
+          <label class="form__label">
+            <input class="form__item" name="name" id="name" value="Anna">
+          </label>
+        </p>
+
         <p class="form__p">
           <input
             class="form__item"
@@ -250,7 +267,9 @@ Enter your story...</textarea
             value="Submit"
           />
         </p>
+
       </form>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

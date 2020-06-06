@@ -11,14 +11,24 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --my-background: #f5d4d4;
+  --my-color: black;
+
+}
+
 body {
-  background: #434343;
-  color: white;
+  
   font-family: "Lato";
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.main {
+  background: var(--my-background);
+  color: var(--my-color);
 }
 
 .form__label {
